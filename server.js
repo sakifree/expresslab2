@@ -14,7 +14,7 @@ app.get("/greeting/:name", (request, response) => {
 })
 
 app.get("/tip/:total/:tipPercentage", (request, response) => {
-    response.send("Your tip is $" + (request.params.total * (request.params.tipPercentage / 100)))
+    response.send("Your tip is $" + (request.params.total * (request.params.tipPercentage / 100))
 })
 
 
