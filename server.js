@@ -1,6 +1,7 @@
 ///////////////////////////////////
 // SETUP - DECLARE DEPENDENCIES - CREATE APP OBJECT
 ///////////////////////////////////
+require("dotenv").config()
 const express = require("express")
 const app = express()
 const PORT = 3000
@@ -43,10 +44,6 @@ app.get("/magic/:question", (request, response) => {
 
     response.send(`${request.params.question}? <h1>${answers[Math.floor(Math.random()*answers.length)]}</h1>`)
 })
-
-
-
-
 
 
 ///////////////////////////////////
